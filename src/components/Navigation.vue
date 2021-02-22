@@ -49,6 +49,11 @@ export default {
     padding-top: 32px;
     .container{
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 576px){
+        flex-direction: row;
+      }
     }
     .img-container{
       flex-grow: 1;

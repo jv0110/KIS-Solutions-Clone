@@ -4,7 +4,7 @@
       <div class="text-content">
         <h1 class="heading">Keep it Simple</h1>
         <h2 class="heading sub">
-          Bringing ideas to life through code and<br> Design<br>
+          Bringing ideas to life through code &amp;<br> Design<br>
         </h2>
       </div>
     </div>
@@ -26,8 +26,11 @@ export default {
       max-width: 1200px;
     }
     .text-content{
-      text-align: left;
+      text-align: center;
       color: #FFFFFF;
+      @media screen and (min-width: 768px){
+        text-align: left;
+      }
       .heading{
         &:not(.sub){
           font-size: 92px;

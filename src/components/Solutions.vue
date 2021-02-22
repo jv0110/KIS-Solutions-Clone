@@ -59,9 +59,12 @@ export default {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
     padding: 80px 16px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+      text-align: left;
+    }
     .section-header{
       grid-column: span 12;
-      text-align: left;
       .heading{
         color: #000000;
         font-size: 28px;
@@ -87,10 +90,13 @@ export default {
         grid-column: span 3;
       }
       img{
-        height: 180px;
+        height: 280px;
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
+        @media screen and (min-width: 1200px){
+          height: 180px;
+        }
       }
       .text-content{
         text-align: center;
